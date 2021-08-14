@@ -1,0 +1,145 @@
+#:kivy 2.0
+
+<RootWidget>:# La clase de widget
+    FloatLayout: 
+        Button:
+	        pos_hint: {"x": 0.1, "y": 0.1}
+            size_hint: (None,None)            
+            size: (15,15)
+            
+<Screen1>:
+
+    BoxLayout:
+
+        BoxLayout:
+            orientation: 'vertical'
+            Button: 
+                padding: 10,10
+                size_hint: .3,.3
+                text : ("1")
+  
+            Button:
+                padding: 10,10
+                size_hint: .3,.3
+                text : ("2")
+
+            Button:
+                padding: 10,10
+                size_hint: .3,.3
+                text : ("3")
+
+            Button: 
+                padding: 10,10
+                size_hint: .3,.3
+                text : ("4")  
+            Button:
+                padding: 10,10
+                size_hint: .3,.3
+                text : ("5")
+                #pos: 150,150
+
+            Button:
+                padding: 10,10
+                size_hint_x: 1.
+                text : ("6")
+
+            
+        Button: 
+            padding: 10,10
+            size_hint: .3,.3
+            text : ("Hola")
+
+                
+        Button:
+            padding: 10,10
+            size_hint: .3,.3
+            text : ("Abrir Ventana nueva")
+            #pos: 150,150
+
+
+        Button:
+            padding: 10,10
+            size_hint: .3,.3
+            text : ("Abrir Ventana vieja jdasfadsf")
+            #pos: 150,150
+            
+
+            
+
+
+<Screen2>:
+    BoxLayout:
+        orientation: 'vertical'
+
+        BoxLayout:
+            TextInput:
+                text:"YO"
+                font_size: '25sp'
+
+        GridLayout:
+            cols: 4
+
+            Button:
+                text:"1"
+            Button:
+                text:"2"
+
+            Button:
+                text:"3"
+
+            Button:
+                text:"+"
+
+            Button:
+                text:"4"
+    
+            Button:
+                text:"5"
+            Button:
+                text:"6"
+            Button:
+                text:"-"
+            Button:
+                text:"7"
+            Button:
+                text:"8"
+                
+            Button:
+                text:"9"
+                
+            Button:
+                text:"/"
+                
+            Button:
+                text:"clr"
+                
+            Button:
+                text:"0"
+                
+            Button:
+                text:"="
+                
+            Button:
+                text:"x"
+                
+
+                
+
+
+<Screen3>:
+    BoxLayout:
+        
+
+        orientation: 'vertical'
+        Label:
+            id: lb
+            text: ""
+
+    
+        Button:
+            id: bt
+            text: "Happy Birthday"
+            font_size: "45sp"
+            on_release: root.bish()
+        
+        
