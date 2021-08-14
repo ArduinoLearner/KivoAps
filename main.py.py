@@ -3,6 +3,9 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
 
 from kivy.app import App
+import kivy
+kivy.require('1.11.0')
+
 
 from kivy.core.window import Window
 
