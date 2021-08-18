@@ -1,145 +1,73 @@
 #:kivy 1.11.0
 
-<RootWidget>:# La clase de widget
-    FloatLayout: 
-        Button:
-	        pos_hint: {"x": 0.1, "y": 0.1}
-            size_hint: (None,None)            
-            size: (15,15)
-            
-<Screen1>:
 
+<LeButton@Button>:
+    on_press: app.escritura(str(self.text)) #Si la funcion a llamar fuera declarada dentro de una clase diferente sería root.función Pero está dentro de la clase App 
+    background_color: ("#656599")
+    background_normal: ""
+    font_size: '45sp'
+
+<MainScreen>:
     BoxLayout:
-
-        BoxLayout:
-            orientation: 'vertical'
-            Button: 
-                padding: 10,10
-                size_hint: .3,.3
-                text : ("1")
-  
-            Button:
-                padding: 10,10
-                size_hint: .3,.3
-                text : ("2")
-
-            Button:
-                padding: 10,10
-                size_hint: .3,.3
-                text : ("3")
-
-            Button: 
-                padding: 10,10
-                size_hint: .3,.3
-                text : ("4")  
-            Button:
-                padding: 10,10
-                size_hint: .3,.3
-                text : ("5")
-                #pos: 150,150
-
-            Button:
-                padding: 10,10
-                size_hint_x: 1.
-                text : ("6")
-
-            
-        Button: 
-            padding: 10,10
-            size_hint: .3,.3
-            text : ("Hola")
-
-                
-        Button:
-            padding: 10,10
-            size_hint: .3,.3
-            text : ("Abrir Ventana nueva")
-            #pos: 150,150
-
-
-        Button:
-            padding: 10,10
-            size_hint: .3,.3
-            text : ("Abrir Ventana vieja jdasfadsf")
-            #pos: 150,150
-            
-
-            
-
-
-<Screen2>:
-    BoxLayout:
+        spacing: 20
+        padding: 20
         orientation: 'vertical'
+        TextInput: 
+            size_hint_y: .4
+            text:""
+            id: lb
+            font_size: '45sp'
 
-        BoxLayout:
-            TextInput:
-                text:"YO"
-                font_size: '25sp'
 
         GridLayout:
+            spacing: 10
             cols: 4
+            
+            LeButton:
+                text: "1"
 
-            Button:
-                text:"1"
-            Button:
-                text:"2"
+            LeButton:
+                text: "2"
+            
+            LeButton:
+                text: "3"
+            
+            LeButton:
+                text: "+"
+            
+            LeButton:
+                text: "4"
 
-            Button:
-                text:"3"
+            LeButton:
+                text: "5"
+            
+            LeButton:
+                text: "6"
+            
+            LeButton:
+                text: "-"
+            
+            LeButton:
+                text: "7"
 
-            Button:
-                text:"+"
+            LeButton:
+                text: "8"
+            
+            LeButton:
+                text: "9"
+            
+            LeButton:
+                text: "/"
+            
+            LeButton:
+                text: "c"
 
-            Button:
-                text:"4"
-    
-            Button:
-                text:"5"
-            Button:
-                text:"6"
-            Button:
-                text:"-"
-            Button:
-                text:"7"
-            Button:
-                text:"8"
-                
-            Button:
-                text:"9"
-                
-            Button:
-                text:"/"
-                
-            Button:
-                text:"clr"
-                
-            Button:
-                text:"0"
-                
-            Button:
-                text:"="
-                
-            Button:
-                text:"x"
-                
-
-                
-
-
-<Screen3>:
-    BoxLayout:
-        
-
-        orientation: 'vertical'
-        Label:
-            id: lb
-            text: ""
-
-    
-        Button:
-            id: bt
-            text: "Happy Birthday"
-            font_size: "45sp"
-            on_release: root.bish()
-        
-        
+            LeButton:
+                text: "0"
+            
+            LeButton:
+                text: "="
+            
+            LeButton:
+                text: "*"
+            
