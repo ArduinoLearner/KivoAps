@@ -14,8 +14,8 @@ Window.clearcolor = get_color_from_hex(("#3737C4"))
 
 
 from kivy.app import App
-import kivy
-kivy.require ('1.11.0')
+#import kivy
+#kivy.require ('1.11.0')
 
 
 
