@@ -3,19 +3,29 @@
 sudo apt install git
 git clone https://github.com/ArduinoLearner/KivoAps
 
+
 git clone https://github.com/kivy/buildozer.git
+
 cd buildozer
+
 sudo apt-get install python3.6
+
 sudo apt-get install -y python3-setuptools
+
 sudo python3 setup.py install 
 cd ..
 
 #supuestamente aqui es donde descarga los codigos y entra a su carpeta para inicializar el empaquetado 
 #pero yo me saltare esa parte puesto que quiero realizar mi propia app osi
+
 sudo apt update
+
 sudo apt install -y git zip unzip openjdk-8-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev
+
 pip3 install --user --upgrade cython virtualenv
+
 sudo apt-get install cython
+
 # sudo apt install libssl-dev preferible no lo instales te generará una linea de instalaciones que no se ni pa que son
 
 sudo apt-get install adb
