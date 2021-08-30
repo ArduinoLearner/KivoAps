@@ -28,7 +28,8 @@ sudo apt-get install cython
 
 # sudo apt install libssl-dev preferible no lo instales te generará una linea de instalaciones que no se ni pa que son
 
-sudo apt-get install adb
+sudo apt-get install adb  // adb logcat -s python 
+
 buildozer android clean
 buildozer -v android debug
 
