@@ -1,0 +1,88 @@
+
+1.- Descargar Virutal Box
+https://www.virtualbox.org/wiki/Downloads
+
+2.- Descargar una imagen de ubuntu linux
+https://ubuntu.com/download/desktop
+
+3.- Crear una caja virtual por virtual box 
+con sistema operativo linux 
+
+Para pegar presiona ctrl + shft + v
+Para revisar las direcciones disponibles dentro de terminal: "ls"
+Para entrar a una direccion: cd<nombre_de_dirección>
+Para salir de la dirección actual: cd..
+ 
+
+Abrir la terminal de linux, escribir los siguientes comandos:
+	
+	cd Downloads (Al escribir Down. Presiona tab para autocompletar la ruta
+
+	sudo apt install git
+
+	git clone https://github.com/ArduinoLearner/install 
+
+
+4.- Comienza con la instalación
+Crea un clon (estando aun dentro de carpeta descargas) de buildozer:
+
+	git clone https://github.com/kivy/buildozer.git
+	
+	cd buildozer
+
+(Comienza a pegar los codigos de descarga del bloc de notas o archivo de texto):
+
+	sudo apt-get install python3.6
+	sudo apt-get install -y python3-setuptools
+	sudo python3 setup.py install 
+	cd ..
+
+
+5.- Crear la app 
+Se requiere primero crear una carpeta donde se desarrollarán los deploys (.py) cuyo nombre sea "main.py"
+Una vez que se tengan los archvo(s) main.py y/o main.kv
+
+Se utiliza "buildozer init" para inicializar la configuración de la app
+	esto creará un archivo con terminación .spec, hay que revisar la configuración de referencia 
+	cuyo nombre es "ConfigRef" donde se suele cambiar el nombre, tipo de paquete, logcat, archivos incluidos
+	como es .kv en cuyo caso se utilice el archivo .kv
+Ya teniendo el archivo configurado:
+
+Escribir "sudo apt update" y los comandos:
+
+	sudo apt update
+	sudo apt install -y git zip unzip openjdk-8-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev
+	pip3 install --user --upgrade cython virtualenv
+	sudo apt-get install cython
+	sudo apt-get install adb  
+
+Ahora todo está listo para crear el apk de la app:
+	
+	buildozer android debug deploy run 
+
+En algún momento se realizará una peticion de "Licence agreement" para esto presionar "y"
+
+
+6.- Preparar el telefono para recibir la app y conectarlo a USB
+Para esto el telefono debe estar en modo desarrollador
+que para eso está este video demostrativo de como hacerlo:
+https://youtu.be/EupAeyL8zAo?t=307
+Y posteriormente configurar el sistema linux para recibir el telefono:
+https://youtu.be/EupAeyL8zAo?t=948
+
+Sigue el video hasta el minuto 18:15 y listo
+
+
+
+Para visualizar errores de la app tales son como por ejemplo crasheos o nombres no definidos
+dentro del codigo se hará lo siguiente:
+(Después de que se halla desplegado, instalado el apk en el dispositivo android y manteniendo
+conexión por usb)
+Se escribirá: 
+
+	adb logcat -s python en terminal
+
+Esto activará las lecturas de errores de compilación, mostrando los errores especificos
+que ha retornado la aplicación.
+
+
