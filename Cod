@@ -1,12 +1,12 @@
 
 
 sudo apt install git
-git clone https://github.com/ArduinoLearner/KivoAps
 
+git clone https://github.com/ArduinoLearner/KivoAps #instalar el codigo 
 
-git clone https://github.com/kivy/buildozer.git
+git clone https://github.com/kivy/buildozer.git #instalar el buildozser
 
-cd buildozer
+cd buildozer #inicializar las instalaciones
 
 sudo apt-get install python3.6
 
@@ -28,7 +28,7 @@ sudo apt-get install cython
 
 # sudo apt install libssl-dev preferible no lo instales te generará una linea de instalaciones que no se ni pa que son
 
-sudo apt-get install adb  // adb logcat -s python 
+sudo apt-get install adb  // adb logcat -s python #este me parece que sirve para poder visualizar los errores en la app (teniendo conectado el telefono)
 
 buildozer android clean
 buildozer -v android debug
