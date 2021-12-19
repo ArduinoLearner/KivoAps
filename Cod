@@ -28,8 +28,11 @@ sudo apt-get install cython
 
 # sudo apt install libssl-dev preferible no lo instales te generará una linea de instalaciones que no se ni pa que son
 
-sudo apt-get install adb  // adb logcat -s python #este me parece que sirve para poder visualizar los errores en la app (teniendo conectado el telefono)
-
+================================================================
+Sino estoy mal. Este "logcat" sirve para evaluar por qué creasheó la app (teniendo el telefono conectado por usb)
+sudo apt-get install adb  
+// adb logcat -s python #este me parece que sirve para poder visualizar los errores en la app (teniendo conectado el telefono)
+================================================================
 buildozer android clean
 buildozer -v android debug
 
