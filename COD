@@ -35,6 +35,7 @@ Crea un clon (estando aun dentro de carpeta descargas) de buildozer:
 	sudo apt-get install python3.6
 	sudo apt-get install -y python3-setuptools
 	sudo python3 setup.py install 
+	sudo apt-get install libssl-dev
 	cd ..
 
 
@@ -52,7 +53,7 @@ Escribir "sudo apt update" y los comandos:
 
 	sudo apt update
 	sudo apt install -y git zip unzip openjdk-8-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev
-	pip3 install --user --upgrade cython virtualenv
+	pip3 install --user --upgrade Cython==0.29.19 virtualenv 
 	sudo apt-get install cython
 	sudo apt-get install adb  
 
