@@ -31,3 +31,11 @@ sudo apt-get install libssl-dev
 buildozer android clean
 Now you should be good to go.
 https://stackoverflow.com/questions/61705348/error-no-matching-distribution-found-for-cython/68452097#68452097
+
+
+
+When debuggin and deploying app:
+  Module not found: idna
+  you need either charset normalizer or chardet  
+Include in the dependencies those modules
+  
