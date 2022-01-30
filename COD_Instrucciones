@@ -65,7 +65,7 @@ Ahora todo está listo para crear el apk de la app:
 	buildozer android debug deploy run 
 	
 	(Para simplemente crear el apk)
-	 buildozer android run
+	 buildozer android debug
 
 En algún momento se realizará una peticion de "Licence agreement" para esto presionar "y"
 
