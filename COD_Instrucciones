@@ -58,7 +58,7 @@ Escribir "sudo apt update" y los comandos:
 	sudo apt-get install adb  
 
 Ahora todo está listo para crear el apk de la app:
-	
+	(Tener conectado el telefono y en modo desarrollador activado, asegurarse que la maquina/virtualbox tenga identificado el dispositivo para realizar el siguiente comando)
 	buildozer android debug deploy run 
 
 En algún momento se realizará una peticion de "Licence agreement" para esto presionar "y"
