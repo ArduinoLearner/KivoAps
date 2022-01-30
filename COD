@@ -45,7 +45,7 @@ Una vez que se tengan los archvo(s) main.py y/o main.kv
 
 Se utiliza "buildozer init" para inicializar la configuración de la app
 	esto creará un archivo con terminación .spec, hay que revisar la configuración de referencia 
-	cuyo nombre es "ConfigRef" donde se suele cambiar el nombre, tipo de paquete, logcat, archivos incluidos
+	cuyo nombre es "ConfigRef" donde se suele cambiar el nombre, tipo de paquete, logcat(descomenta la linea "android.logcat_filters=[...]") , archivos incluidos
 	como es .kv en cuyo caso se utilice el archivo .kv
 Ya teniendo el archivo configurado:
 
